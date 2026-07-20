@@ -9,5 +9,7 @@ export default async function PostPage({
   const { postId } = await params;
   const post = await getPostById(Number(postId));
 
-  return <PostDetailTemplate post={post} />;
+  return (<>
+  <PostDetailTemplate post={post} />
+  </>);
 }

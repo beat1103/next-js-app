@@ -25,7 +25,7 @@ export function PostCard({ post }: PostCardProps) {
       <CardFooter>
         <Link
           className="rounded-md bg-blue-500 px-4 py-2 text-white"
-          href={`/posts/${post.id}`}
+          href={`/feeds/${post.id}`}
         >
           View Post
         </Link>
