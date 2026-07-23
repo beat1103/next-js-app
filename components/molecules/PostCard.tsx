@@ -7,10 +7,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/atoms/card";
-import { PostResponse } from "@/types/post-service/response";
+import type { UiPost } from "@/types/post/ui";
 
 interface PostCardProps {
-  post: PostResponse;
+  post: UiPost;
 }
 
 export function PostCard({ post }: PostCardProps) {

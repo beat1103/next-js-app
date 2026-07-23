@@ -1,9 +1,9 @@
 import { Section } from "@/components/atoms/Section";
 import { PostCard } from "@/components/molecules/PostCard";
-import { PostResponse } from "@/types/post-service/response";
+import type { UiPost } from "@/types/post/ui";
 
 interface PostListProps {
-  data: PostResponse[];
+  data: UiPost[];
   limit?: number;
 }
 

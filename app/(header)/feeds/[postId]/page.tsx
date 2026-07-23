@@ -1,4 +1,4 @@
-import { getPostById } from "@/actions/post-service/post-actions";
+import { getPostService } from "@/services/posts.service";
 import { PostDetailTemplate } from "@/components/templates/PostDetailTemplate";
 
 export default async function PostPage({
@@ -7,9 +7,7 @@ export default async function PostPage({
   params: Promise<{ postId: string }>;
 }) {
   const { postId } = await params;
-  const post = await getPostById(Number(postId));
+  const post = await getPostService(Number(postId));
 
-  return (<>
-  <PostDetailTemplate post={post} />
-  </>);
+  return <PostDetailTemplate post={post} />;
 }

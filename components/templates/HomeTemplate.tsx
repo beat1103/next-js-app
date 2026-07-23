@@ -1,9 +1,9 @@
 import { Section } from "@/components/atoms/Section";
 import { PostList } from "@/components/organisms/PostList";
-import { PostResponse } from "@/types/post-service/response";
+import type { UiPost } from "@/types/post/ui";
 
 interface HomeTemplateProps {
-  posts: PostResponse[];
+  posts: UiPost[];
 }
 
 export function HomeTemplate({ posts }: HomeTemplateProps) {

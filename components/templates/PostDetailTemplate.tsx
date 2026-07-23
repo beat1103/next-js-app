@@ -1,8 +1,8 @@
 import { Section } from "@/components/atoms/Section";
-import { PostResponse } from "@/types/post-service/response";
+import type { UiPost } from "@/types/post/ui";
 
 interface PostDetailTemplateProps {
-  post: PostResponse;
+  post: UiPost;
 }
 
 export function PostDetailTemplate({ post }: PostDetailTemplateProps) {
